@@ -1,0 +1,78 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\usepackage{url}
+
+\title{Proposal for Research and Education Projects\\
+	 BHAVI 2016 Summer Education Program}
+\author{Jason Liu}
+\date{6/10/2016}
+
+\begin{document}
+\maketitle
+
+\section{Primary Research Project}
+	\begin{description}
+		\item[Project Title:] Using Web and Mobile Applications to Create an Accurate Diagnosis for Parkinson's Disease
+		\item[Project Authors:] Jason Liu and Daniel Yang
+	\end{description}
+
+	Currently, there is no specific test that diagnoses Parkinson’s Disease (PD). The most accurate tests, such as measuring dopamine levels and brain metabolism, are difficult to administer and require conjunction with other tests. The proposed project plans to use a Web and later mobile app to assist in diagnosing PD. The patient would be asked to click on a series of dots with a mouse on a computer screen. The accuracy and precision of the clicks would be recorded and compared to other results. Since PD causes shivering in random directions unlike other diseases similar to PD, the clicks of the patient should be randomly distributed around the target dot. This early detection system would enable earlier treatment and slow the progression of PD. 
+
+	In order to create a diagnosis on two platforms, we plan to use HTML 5 for web and AndroidStudio for mobile. We also plan to use SQL or Firebase in order to store user data for diagnosis and future reference. In order to collect baseline data, we will need to gather participants who suffer from Parkinson’s Disease. In order to increase reliability, gathering data from varying stages of Parkinson’s and people with similar diseases would be ideal. By collecting initial information, we can see the difference in distribution of clicking between those with and without PD. Using the data, we can create an application that tests for precision, speed, accuracy, etc of the user’s clicks. By comparing results of a user with an unknown condition to an aggregate collection of users with Parkinson’s, we can create a reliable diagnosis of potential Parkinson’s Disease. New data with diagnoses of new users with or without Parkinson’s can be added to the previous data, enabling “learning” for future uses. 
+
+	Parkinson’s Disease (PD) is extremely hard to diagnose because of other similar diseases that affect the nervous systems and thereby movement. The disease only becomes clear after progressing for some time. However, PD has a unique aspect of effecting movement randomly, thus by looking at the statistical distribution using the methods described above, a diagnoses can be made.
+
+Timeline:
+\begin{itemize}
+	\item{July 15th; Finish application.}
+	\item{July 16th: Begin collecting baseline data from parcipants with PD.}
+	\item{August 1st: Release applications to public. Continue to gather data and refine data and accuracy }
+	\item{August 25th: Publish results.}
+\end{itemize}
+
+\section{Secondary Research Project}
+
+\begin{description}
+\item[Project Title:]  Hypothesis-Exploring Methods for Automated Meta-Analyses of Brain Imaging Literature
+\item[Project Authors:] Sujay Ratna, Brian Bae, Jason Liu (Secondary author)
+\item[Project Role:] To be determined
+\end{description}
+To be determined 
+
+For your optional secondary research project, if you are serving as a team member on a project identified as the primary research project of another student, then provide the name of the other student and the title of that project.  In this case, you should also describe your role as team member on that other project and what you plan to contribute to that team project.
+
+If you are not serving as a team member on another student's primary project, then  prepare a short description of your secondary research project. As much as possible, your secondary research project should be related to your primary research project in at least some way such as related question or topic in same general problem area, use of similar methods and tools on a different data set, or a literature review paper on the general field related to the experimental focus of your primary research project.  Explain how your secondary research project is similar to and/or different from your primary research project.  Depending on the extent of similarity or difference between your primary and secondary projects, your description of the secondary project could be as short as just a few sentences or as long as a few paragraphs. 
+
+
+\section{Software Education Project}
+
+If you have no prior software engineering experience, simply state ``no prior software engineering experience''.  Otherwise, list all programming languages in which you have gained experience with coding skills. Please explicitly clarify any prior experience with the following languages:
+\begin{itemize}
+\item Java: Used for AP Computer Science
+\item HTML5, CSS3 and JavaScript: Used for Web App Development (class) and personal projects
+\item mySQL through c9.io: Used for personal project
+\item XML: Used for Android projects through AndroidStudio in Mobile App Development (class) and personal projects
+\end{itemize}
+
+\begin{itemize}
+\item IntelliJ: Used for AndroidStudio and in Mobile App Development
+\item Eclipse: Used for AP Computer Science
+\item AndroidStudio: Used for Android Applications
+\end{itemize}
+
+It may be necessary for me to learn Swift in order to create a mobile application on Apple products. I may complete an online course to teach me Swift and present my mastery of these skills through my primary project which will require use of Swift. 
+
+\section{Searching and Citing Literature}
+To be Decided
+Please learn to use JabRef which has built-in web database search tools and create *.bib files for your references. It is useful to collect references in separate *.bib files organized by topic which can then be reused for different manuscripts. An example is BrainWarping.bib intended for use collecting references related to brain warping. For this template example, the version of BrainWarping.bib contains only a single reference for the book called \emph{Brain Warping} \cite{Toga1988}.  However, this example demonstrates how the BibTeX field called \texttt{note} can be used to store whatever comments you like.  The \texttt{note}  field may or may not be included in the typeset output depending on the BibTeX style used. As seen in this example with the \texttt{plain} style, the \texttt{note} field is typeset in the output generated. 
+
+
+
+% References: note that the \nocite{*} command will automatically generate 
+%  a reference list for all references contained in all *.bib files separated by
+%  commas in the \bibliography{} command.
+% \nocite{*}
+\bibliographystyle{plain}
+\bibliography{BrainWarping}
+\end{document}
