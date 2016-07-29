@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.6.11)  28 JUL 2016 12:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.6.11)  29 JUL 2016 16:59
 entering extended mode
 **./BHAVI2016JLCT.tex
 (BHAVI2016JLCT.tex
@@ -390,11 +390,22 @@ LaTeX Info: Redefining \nameref on input line 23.
 \openout3 = `BHAVI2016JLCT.out'.
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 35--36
+
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 40.
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 40.
+
 <FDGPETFOD_patterns_ctrev3.png, id=7, 440.847pt x 380.01974pt>
 File: FDGPETFOD_patterns_ctrev3.png Graphic file (type png)
 
 <use FDGPETFOD_patterns_ctrev3.png>
-Package pdftex.def Info: FDGPETFOD_patterns_ctrev3.png used on input line 38.
+Package pdftex.def Info: FDGPETFOD_patterns_ctrev3.png used on input line 49.
 (pdftex.def)             Requested size: 469.75499pt x 404.9355pt.
 Missing character: There is no ï in font cmr10!
 Missing character: There is no ¿ in font cmr10!
@@ -409,28 +420,26 @@ Missing character: There is no ½ in font cmr10!
 
 
 ]
-Underfull \hbox (badness 1454) in paragraph at lines 113--116
+Underfull \hbox (badness 1454) in paragraph at lines 124--127
 []\OT1/cmr/m/n/10 Taswell, C. DOORS to the se-man-tic web and
  []
 
 No file BHAVI2016JLCT.bbl.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 131.
-[2
-
- <./FDGPETFOD_patterns_ctrev3.png>] [3]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 131.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 142.
+[2 <./FDGPETFOD_patterns_ctrev3.png>] [3]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 142.
  (BHAVI2016JLCT.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 131.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 131.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 142.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 142.
 Package rerunfilecheck Info: File `BHAVI2016JLCT.out' has not changed.
 (rerunfilecheck)             Checksum: 6843187AA006C3BE431DDADE28DDF239;46.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 131.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 142.
  ) 
 Here is how much of TeX's memory you used:
- 6902 strings out of 493335
- 98737 string characters out of 3139260
- 211244 words of memory out of 3000000
- 10338 multiletter control sequences out of 15000+200000
+ 6919 strings out of 493335
+ 99025 string characters out of 3139260
+ 210244 words of memory out of 3000000
+ 10352 multiletter control sequences out of 15000+200000
  9107 words of font info for 33 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  29i,10n,32p,1096b,408s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -439,10 +448,11 @@ ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX
  2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/font
 s/type1/public/amsfonts/cm/cmsl10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmti10.pfb>
-Output written on BHAVI2016JLCT.pdf (3 pages, 434691 bytes).
+public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
+msfonts/cm/cmti10.pfb>
+Output written on BHAVI2016JLCT.pdf (3 pages, 442768 bytes).
 PDF statistics:
- 75 PDF objects out of 1000 (max. 8388607)
+ 79 PDF objects out of 1000 (max. 8388607)
  24 named destinations out of 1000 (max. 500000)
  14 words of extra memory for PDF output out of 10000 (max. 10000000)
 
