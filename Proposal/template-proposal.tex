@@ -1,0 +1,61 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\usepackage{url}
+
+\title{MEAN Stack Template List of Components}
+\author{acraig, dyang, jliu, sbae, sratna}
+\date{08-15-16}
+
+\begin{document}
+\maketitle
+
+\section{MEAN}
+Our web application will be implemented using the MEAN stack, with special emphasis on Angualr 2 which has typescript. This MEAN stack implementation must work on Microsoft Visual Studio 2015 for business reasons. Seince we are not a for profit company the code must be shown in the environment so it is easily accessible by others. In addition, our goal is that others can use this nPDS template to build a nPDS server with their specifications. 
+\begin{itemize}
+	\item{MongoDB: https://www.mongodb.com/ (v3.2)}
+	\item{Express: https://expressjs.com/ (v4.14.0)}
+	\item{Angular JS: https://angularjs.org/ (v2.0: Comes with Typescript ES6)}
+	\item{Node JS: https://nodejs.org/en/ (v4.4.7LTS: Long Term Support, Node.js highly maintained)}
+\end{itemize}
+\section{View Templates}
+The view templates of the web application willl have URL for every webpage to have a similar organization as swebpages in the Semantic Web. We will utilize the view templates by AngularJS. Any component that is used will be backed by a successful, well-established, for-profit organization, that is not a one-off.
+
+\section{User Authentication}
+The user authentication system will be readily maintained and supported. the input credentials will be on the client front end and checks will be done using Node and Express. Finally, MongoDB will store all authentication attempts in a database. This system will use PassportJS (http://passportjs.org/ (v1.0.0) *can be downloaded through node package manager) as its main organization and validation method. We will implement a Nexus Portal Doors user management system. This will be built within NPDS that allows for any user authentication system to be connected to the system.
+
+\section{Package Management}
+Our web application will have a simple one-click download for the template in order to ensure easy functionability by the user.
+
+\section{Database Agent}
+To get in an out of the database we will use Mongoose and MongoDB. This will be based on the URL of the webpage.
+
+\section{Priority of Environments}
+\begin{itemize}
+	\item{JetBrains WebStorm: https://www.jetbrains.com/webstorm/}
+	: Lightweight yet powerful IDE, perfectly equipped for complex client-side development and server-side development with Node.js
+	\item{Microsoft Visual Studio Community 2015: https://www.visualstudio.com/en-us/products/visual-studio-community-vs.aspx}
+	: A free, fully-featured, and extensible IDE for creating modern applications for Windows, Android, and iOS,
+as well as web applications and cloud services
+	\item{Microsoft Visual Code: https://code.visualstudio.com/download}
+	: code editor redefined and optimized for building and debugging modern web and cloud applications, free, open-source, runs anywhere
+\end{itemize}
+
+\section{Server Types}
+\begin{itemize}
+	\item{NPDS Read/Write Registar}
+	\item{NEXUS Read Only Diristry}
+	: a PORTAL registry and DOORS directory combined in a single server
+	\item{PORTAL Read Only Registry}
+	: a registry for storing and distributing descriptions of resources relevant to a given problem domain. These descriptions include both lexical tags and semantic labels as well as locations and cross-references. Back-end use of traditional relational database stores, may be established by an organization or person who maintains any local policies governing registration of resources at that particular primary PORTAL registry
+	\item{DOORS Read Only Directory}
+	: a directory for efficient lookup of  resources registered with a PORTAL registry using the associated tags and labels and has RDF-triple database stores
+\end{itemize}
+
+\section{Interfaces}
+\begin{itemize}
+	\item{Agent Interactive RESTful Web API Service}
+	\item{Human User Interactive Website Application}
+\end{itemize}
+
+\end{document}
