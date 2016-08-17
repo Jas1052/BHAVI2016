@@ -1,3 +1,1 @@
-This was a test application for mean. It was originally sourced from linnovate-mean. In order to run the application,
-download the zip into a folder. Using node.js, navigate into the folder and install the npm module with "npm install." then
-start the application with gulp or node server.
+This was a test application for mean. It was originally sourced from linnovate-mean. In order to run the application, download the zip into a folder. Using node.js, navigate into the folder and install the npm module with "npm install." then start the application with gulp or node server.
