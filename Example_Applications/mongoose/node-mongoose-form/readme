@@ -1,0 +1,1 @@
+This application was created in order to work with mongoose. Download the zip and nagivate into node-mongoose-form using node.js Then, install the npm package with "npm install" in the node console. Start the application with npm start and navigate to http://localhost:3000/form.
