@@ -1,6 +1,5 @@
 'use strict';
 
-import js2xmlparser from 'js2xmlparser';
 import xml2js from 'xml2js';
 // @flow
 interface User {
@@ -30,8 +29,7 @@ export default class SignupController {
 
   register(form) {
     this.submitted = true;
-
-    if(form.$valid) {
+    if (form.$valid) {
       return this.Auth.createUser({
         name: this.user.name,
         email: this.user.email,
@@ -40,7 +38,8 @@ export default class SignupController {
       })
         .then(() => {
           // Account created, redirect to home
-          this.$state.go('main');      })
+          this.$state.go('main');
+        })
         .catch(err => {
           err = err.data;
           this.errors = {};
@@ -52,7 +51,7 @@ export default class SignupController {
 
         });
     }
-
-
   }
+
 }
+

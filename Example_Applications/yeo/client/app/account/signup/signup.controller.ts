@@ -1,6 +1,6 @@
 'use strict';
 
-import js2xmlparser from 'js2xmlparser';
+import xml2js = require('xml2js');
 import xml2js from 'xml2js';
 // @flow
 interface User {
@@ -29,8 +29,8 @@ export default class SignupController {
   }
 
   register(form) {
+    var parseString = require('xml2js').parseString;
     this.submitted = true;
-
     if (form.$valid) {
       return this.Auth.createUser({
         name: this.user.name,
@@ -53,7 +53,7 @@ export default class SignupController {
 
         });
     }
-
   }
 
 }
+
