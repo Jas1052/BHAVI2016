@@ -8,7 +8,7 @@ process.exit(-1);
 function lookFor(searchPhrase){
     console.log("Looking");
     var Articles = require("./database.js");
-    Articles.find({ title: searchPhrase }, function(err, docs){
+    Articles.find({title: searchPhrase}, function(err, docs){
         console.log(docs);
     });
 }
