@@ -1,0 +1,11 @@
+To run webcrawler, download the javascript files, and .json file. 
+You must have Node.JS installed on your computer. 
+
+Inside the root of the folder with the javascript files and .json file in commandline, run "npm install"
+After that, run "node pubMed.js searchKey" where searchKey is whatever searchKey you would like the webcrawler to search for in PubMed. 
+
+or
+
+run "node BFSWebcrawler.js searchKey where searchKey is a searchKey you would like to search for in PubMed, using a Breadth First Search. 
+
+
