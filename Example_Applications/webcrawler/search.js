@@ -1,7 +1,7 @@
-var mongoose = require("mongoose");
+//var mongoose = require("mongoose");
 
 console.log("Search.js Started")
-lookFor("Populations and Interventions for Palliative and End-of-Life Care: A Systematic Review.");
+lookFor("Populations and Interventions for Palliative and End-of-Life Care: A Systematic Review");
 console.log("Search.js Ended");
 process.exit(-1);
 
