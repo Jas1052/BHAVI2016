@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.6.11)  20 AUG 2016 15:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.6.11)  22 AUG 2016 15:40
 entering extended mode
 **./BHAVI2016JLCT0819.tex
 (BHAVI2016JLCT0819.tex
@@ -430,25 +430,25 @@ Missing character: There is no ï in font cmr10!
 Missing character: There is no ¿ in font cmr10!
 Missing character: There is no ½ in font cmr10!
 
-Underfull \hbox (badness 1454) in paragraph at lines 98--101
+Underfull \hbox (badness 1454) in paragraph at lines 92--95
 []\OT1/cmr/m/n/10 Taswell, C. DOORS to the se-man-tic web and
  []
 
 No file BHAVI2016JLCT0819.bbl.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 116.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 110.
 [2]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 116.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 110.
  (BHAVI2016JLCT0819.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 116.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 116.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 110.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 110.
 Package rerunfilecheck Info: File `BHAVI2016JLCT0819.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 116.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 110.
  ) 
 Here is how much of TeX's memory you used:
  6897 strings out of 493335
  98755 string characters out of 3139260
- 207039 words of memory out of 3000000
+ 207052 words of memory out of 3000000
  10335 multiletter control sequences out of 15000+200000
  8653 words of font info for 31 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -460,7 +460,7 @@ es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX
 s/type1/public/amsfonts/cm/cmsl10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
 public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
 msfonts/cm/cmti10.pfb>
-Output written on BHAVI2016JLCT0819.pdf (2 pages, 100393 bytes).
+Output written on BHAVI2016JLCT0819.pdf (2 pages, 100330 bytes).
 PDF statistics:
  65 PDF objects out of 1000 (max. 8388607)
  21 named destinations out of 1000 (max. 500000)
