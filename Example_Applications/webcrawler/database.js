@@ -14,4 +14,4 @@ var articlesSchema = new mongoose.Schema({
 });
 
 //compile schema to model
-module.exports = db.model('articles', articlesSchema)
+module.exports = db.model('articles', articlesSchema);

@@ -1,14 +1,13 @@
 //var mongoose = require("mongoose");
 
-console.log("Search.js Started")
-lookFor("Populations and Interventions for Palliative and End-of-Life Care: A Systematic Review");
-console.log("Search.js Ended");
-process.exit(-1);
+console.log("Search.js Started");
+var title = "MicroRNA-613 regulates the expression of brain-derived neurotrophic factor in Alzheimer's disease.";
+lookFor(title);
 
 function lookFor(searchPhrase){
-    console.log("Looking");
-    var Articles = require("./database.js");
-    Articles.find({title: searchPhrase}, function(err, docs){
+    var Articles = require("./database.js"); //grabs schema and model
+    Articles.find({title: searchPhrase}, "author", function(err, docs){
+        console.log("Looking");
         console.log(docs);
     });
 }
