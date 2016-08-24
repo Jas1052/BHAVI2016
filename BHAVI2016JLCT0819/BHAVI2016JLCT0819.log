@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.6.11)  22 AUG 2016 15:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.6.11)  23 AUG 2016 13:07
 entering extended mode
 **./BHAVI2016JLCT0819.tex
 (BHAVI2016JLCT0819.tex
@@ -390,18 +390,24 @@ LaTeX Info: Redefining \nameref on input line 23.
 \openout3 = `BHAVI2016JLCT0819.out'.
 
 
-Underfull \hbox (badness 1147) in paragraph at lines 35--36
-\OT1/cmr/m/n/10 serves as the database for the NPD. As a noSQL
+<NPDS_flowchart.png, id=3, 514.92375pt x 307.74976pt>
+File: NPDS_flowchart.png Graphic file (type png)
+ <use NPDS_flowchart.png>
+Package pdftex.def Info: NPDS_flowchart.png used on input line 35.
+(pdftex.def)             Requested size: 231.71355pt x 138.4861pt.
+
+Underfull \hbox (badness 7397) in paragraph at lines 37--38
+[]\OT1/cmr/m/n/10 For this new NEXUS-PORTAL-DOORS (NPD)
  []
 
 
-Underfull \hbox (badness 2384) in paragraph at lines 35--36
-\OT1/cmr/m/n/10 Mon-goose, a pop-u-lar ob-ject re-la-tional map-per for
+Underfull \hbox (badness 2582) in paragraph at lines 37--38
+\OT1/cmr/m/n/10 source run-time en-vi-ron-ment which en-ables scal-able
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 35--36
-
+Underfull \hbox (badness 1082) in paragraph at lines 37--38
+\OT1/cmr/m/n/10 web ap-pli-ca-tion into a MVC (model-view-controller)
  []
 
 
@@ -409,17 +415,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 37--38
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--40
+
+ []
+
 [1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 
-]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 43.
+ <./NPDS_flowchart.png>]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 45.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 43.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 45.
 Missing character: There is no ï in font cmr10!
 Missing character: There is no ¿ in font cmr10!
 Missing character: There is no ½ in font cmr10!
@@ -430,26 +441,26 @@ Missing character: There is no ï in font cmr10!
 Missing character: There is no ¿ in font cmr10!
 Missing character: There is no ½ in font cmr10!
 
-Underfull \hbox (badness 1454) in paragraph at lines 92--95
+Underfull \hbox (badness 1454) in paragraph at lines 94--97
 []\OT1/cmr/m/n/10 Taswell, C. DOORS to the se-man-tic web and
  []
 
 No file BHAVI2016JLCT0819.bbl.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 110.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 112.
 [2]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 110.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 112.
  (BHAVI2016JLCT0819.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 110.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 110.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 112.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 112.
 Package rerunfilecheck Info: File `BHAVI2016JLCT0819.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 110.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 112.
  ) 
 Here is how much of TeX's memory you used:
- 6897 strings out of 493335
- 98755 string characters out of 3139260
- 207052 words of memory out of 3000000
- 10335 multiletter control sequences out of 15000+200000
+ 6902 strings out of 493335
+ 98853 string characters out of 3139260
+ 207019 words of memory out of 3000000
+ 10338 multiletter control sequences out of 15000+200000
  8653 words of font info for 31 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  29i,8n,32p,1644b,323s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -460,9 +471,9 @@ es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX
 s/type1/public/amsfonts/cm/cmsl10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
 public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
 msfonts/cm/cmti10.pfb>
-Output written on BHAVI2016JLCT0819.pdf (2 pages, 100330 bytes).
+Output written on BHAVI2016JLCT0819.pdf (2 pages, 119748 bytes).
 PDF statistics:
- 65 PDF objects out of 1000 (max. 8388607)
+ 68 PDF objects out of 1000 (max. 8388607)
  21 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -122,8 +122,6 @@ function BFS(listolinks, callback){
                     console.log();
                     console.log("KEYWORDS:", keysArray);
 
-                    saveInfo(titles, authors, journal, abstracts, keysArray);
-
                     var articleJSON = {
                       'name': titles,
                       'authors': authors,
@@ -132,6 +130,8 @@ function BFS(listolinks, callback){
                       'date': "",
                       'volume': ""
                     };
+
+                    saveInfo(titles, authors, journal, abstracts, keysArray, articleJSON);
 
                     //converts JSON ARTICLE to Bibtex format
                     jsonTObib(articleJSON);
@@ -248,7 +248,7 @@ function globalSTATS(){
 }
 
 //saves info on primary articles
-function saveInfo(title, authors, journal, abstract, keysArray){
+function saveInfo(title, authors, journal, abstract, keysArray, jsonObject){
     //console.log("I'm here");
     var Article = require("./database.js");
     //connects to model
@@ -258,7 +258,8 @@ function saveInfo(title, authors, journal, abstract, keysArray){
             author: authors,
             journal: journal,
             abstract: abstract,
-            keyWords: keysArray
+            keyWords: keysArray,
+            jsonObject: jsonObject
         }
     );
     //save model to MongoDB

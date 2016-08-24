@@ -6,8 +6,8 @@ lookFor(title);
 
 function lookFor(searchPhrase){
     var Articles = require("./database.js"); //grabs schema and model
-    Articles.find({title: searchPhrase}, "author", function(err, docs){
-        console.log("Looking");
-        console.log(docs);
-    });
+Articles.find({title: searchPhrase}, "-_id jsonObject", function(err, docs){
+    console.log("Looking");
+    console.log(docs);
+});
 }
