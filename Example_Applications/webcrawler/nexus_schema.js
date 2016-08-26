@@ -6,7 +6,7 @@ var db = mongoose.connect('mongodb://localhost/npds');
 
 //create schema for articles
 var schemaNexus = new mongoose.Schema({
-    EntityHidKey: String,
+    EntityHidKey: {type: String, required: true},
     EntityTypeCode: String,
     EntityName: String,
     EntityNature: String,

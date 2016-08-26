@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.6.11)  23 AUG 2016 13:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.6.11)  26 AUG 2016 15:57
 entering extended mode
 **./BHAVI2016JLCT0819.tex
 (BHAVI2016JLCT0819.tex
@@ -303,23 +303,31 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count123
 )
+("C:\Program Files\MiKTeX 2.9\tex\latex\wrapfig\wrapfig.sty"
+\wrapoverhang=\dimen126
+\WF@size=\dimen127
+\c@WF@wrappedlines=\count124
+\WF@box=\box30
+\WF@everypar=\toks24
+Package: wrapfig 2003/01/31  v 3.6
+)
 (BHAVI2016JLCT0819.aux)
 \openout1 = `BHAVI2016JLCT0819.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -357,17 +365,17 @@ LaTeX Font Info:    ... okay on input line 23.
 
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count124
-\scratchdimen=\dimen126
-\scratchbox=\box30
-\nofMPsegments=\count125
-\nofMParguments=\count126
-\everyMPshowfont=\toks24
-\MPscratchCnt=\count127
-\MPscratchDim=\dimen127
-\MPnumerator=\count128
-\makeMPintoPDFobject=\count129
-\everyMPtoPDFconversion=\toks25
+\scratchcounter=\count125
+\scratchdimen=\dimen128
+\scratchbox=\box31
+\nofMPsegments=\count126
+\nofMParguments=\count127
+\everyMPshowfont=\toks25
+\MPscratchCnt=\count128
+\MPscratchDim=\dimen129
+\MPnumerator=\count129
+\makeMPintoPDFobject=\count130
+\everyMPtoPDFconversion=\toks26
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -379,91 +387,127 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-\AtBeginShipoutBox=\box31
-Package hyperref Info: Link coloring ON on input line 23.
-LaTeX Info: Redefining \ref on input line 23.
-LaTeX Info: Redefining \pageref on input line 23.
-LaTeX Info: Redefining \nameref on input line 23.
+\AtBeginShipoutBox=\box32
+Package hyperref Info: Link coloring ON on input line 25.
+LaTeX Info: Redefining \ref on input line 25.
+LaTeX Info: Redefining \pageref on input line 25.
+LaTeX Info: Redefining \nameref on input line 25.
 
 (BHAVI2016JLCT0819.out) (BHAVI2016JLCT0819.out)
 \@outlinefile=\write3
 \openout3 = `BHAVI2016JLCT0819.out'.
 
 
-<NPDS_flowchart.png, id=3, 514.92375pt x 307.74976pt>
-File: NPDS_flowchart.png Graphic file (type png)
- <use NPDS_flowchart.png>
-Package pdftex.def Info: NPDS_flowchart.png used on input line 35.
-(pdftex.def)             Requested size: 231.71355pt x 138.4861pt.
-
-Underfull \hbox (badness 7397) in paragraph at lines 37--38
-[]\OT1/cmr/m/n/10 For this new NEXUS-PORTAL-DOORS (NPD)
+Underfull \hbox (badness 1147) in paragraph at lines 46--47
+\OT1/cmr/m/n/10 serves as the database for the NPD. As a noSQL
  []
 
 
-Underfull \hbox (badness 2582) in paragraph at lines 37--38
-\OT1/cmr/m/n/10 source run-time en-vi-ron-ment which en-ables scal-able
+Underfull \hbox (badness 2384) in paragraph at lines 46--47
+\OT1/cmr/m/n/10 Mon-goose, a pop-u-lar ob-ject re-la-tional map-per for
  []
 
 
-Underfull \hbox (badness 1082) in paragraph at lines 37--38
-\OT1/cmr/m/n/10 web ap-pli-ca-tion into a MVC (model-view-controller)
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 37--38
+Underfull \hbox (badness 10000) in paragraph at lines 46--47
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 39--40
+Underfull \hbox (badness 10000) in paragraph at lines 48--49
+
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 51.
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 51.
+
+Underfull \hbox (badness 1163) in paragraph at lines 57--58
+\OT1/cmr/m/n/10 which would be used to build an XML doc-u-ment.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--58
 
  []
 
 [1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 
- <./NPDS_flowchart.png>]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 45.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 45.
-Missing character: There is no Ô in font cmr10!
-Missing character: There is no ø in font cmr10!
-Missing character: There is no Ω in font cmr10!
-Missing character: There is no Ô in font cmr10!
-Missing character: There is no ø in font cmr10!
-Missing character: There is no Ω in font cmr10!
-Missing character: There is no Ô in font cmr10!
-Missing character: There is no ø in font cmr10!
-Missing character: There is no Ω in font cmr10!
-
-Underfull \hbox (badness 1454) in paragraph at lines 94--97
-[]\OT1/cmr/m/n/10 Taswell, C. DOORS to the se-man-tic web and
+]
+Underfull \hbox (badness 2150) in paragraph at lines 59--60
+\OT1/cmr/m/n/10 to com-mu-ni-cate and ex-change in-for-ma-tion be-tween
  []
 
-No file BHAVI2016JLCT0819.bbl.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 112.
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--60
+
+ []
+
 [2]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 112.
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+
+
+Package hyperref Warning: Suppressing link with empty target on input line 159.
+
+
+
+Package hyperref Warning: Suppressing link with empty target on input line 165.
+
+
+
+Package hyperref Warning: Suppressing link with empty target on input line 171.
+
+
+
+Package hyperref Warning: Suppressing link with empty target on input line 177.
+
+
+Missing character: There is no Ô in font cmr10!
+Missing character: There is no ø in font cmr10!
+Missing character: There is no Ω in font cmr10!
+Missing character: There is no Ô in font cmr10!
+Missing character: There is no ø in font cmr10!
+Missing character: There is no Ω in font cmr10!
+Missing character: There is no Ô in font cmr10!
+Missing character: There is no ø in font cmr10!
+Missing character: There is no Ω in font cmr10!
+
+Package hyperref Warning: Suppressing link with empty target on input line 182.
+
+
+
+Package hyperref Warning: Suppressing link with empty target on input line 187.
+
+
+No file BHAVI2016JLCT0819.bbl.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 198.
+[3
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 198.
  (BHAVI2016JLCT0819.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 112.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 112.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 198.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 198.
 Package rerunfilecheck Info: File `BHAVI2016JLCT0819.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 112.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 198.
  ) 
 Here is how much of TeX's memory you used:
- 6902 strings out of 493335
- 98853 string characters out of 3139260
- 207019 words of memory out of 3000000
- 10338 multiletter control sequences out of 15000+200000
+ 6970 strings out of 493335
+ 99605 string characters out of 3139260
+ 208499 words of memory out of 3000000
+ 10392 multiletter control sequences out of 15000+200000
  8653 words of font info for 31 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 29i,8n,32p,1644b,323s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 29i,8n,32p,1644b,401s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX
@@ -471,9 +515,9 @@ es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX
 s/type1/public/amsfonts/cm/cmsl10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
 public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
 msfonts/cm/cmti10.pfb>
-Output written on BHAVI2016JLCT0819.pdf (2 pages, 119748 bytes).
+Output written on BHAVI2016JLCT0819.pdf (3 pages, 112412 bytes).
 PDF statistics:
- 68 PDF objects out of 1000 (max. 8388607)
- 21 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 99 PDF objects out of 1000 (max. 8388607)
+ 33 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

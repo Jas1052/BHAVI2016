@@ -1,0 +1,182 @@
+% Encoding: UTF-8
+
+@InProceedings{Guha2010,
+  author    = {Guha, Arjun and Krishnamurthi, Shriram},
+  title     = {Minding the (Semantic) Gap: Engineering Programming Language Theory},
+  booktitle = {Proceedings of the FSE/SDP Workshop on Future of Software Engineering Research},
+  year      = {2010},
+  series    = {FoSER '10},
+  publisher = {ACM},
+  location  = {Santa Fe, New Mexico, USA},
+  isbn      = {978-1-4503-0427-6},
+  pages     = {155--156},
+  doi       = {10.1145/1882362.1882395},
+  url       = {http://doi.acm.org/10.1145/1882362.1882395},
+  acmid     = {1882395},
+  address   = {New York, NY, USA},
+  keywords  = {semantics},
+  numpages  = {2},
+}
+
+@Book{,
+  author    = {Dickey, J.},
+  title     = {Write modern web apps with the MEAN stack: Mongo, Express, AngularJS, and Node. js},
+  year      = {2014},
+  editor    = {Pearson Education},
+  publisher = {Pearson Education},
+}
+
+@Article{,
+  author  = {Barrasa Rodriguez, J., Corcho, �. and G�mez-P�rez, A.},
+  title   = {R2O, an extensible and semantically based database-to-ontology mapping language},
+  year    = {2004},
+  journal = {Springer-Verlag},
+}
+
+@Misc{ZhengxiangPan2003,
+  author   = {Zhengxiang Pan, Jeff Heflin},
+  title    = {DLDB: Extending Relational Databases to Support Semantic Web Queries},
+  year     = {2003},
+  abstract = {Abstract: We present DLDB, a knowledge base system that extends a relational database management system with additional capabilities for DAML+OIL inference. We discuss a number of database schemas that can be used to store RDF data and discuss the tradeoffs of each. Then we describe how we extend our design to support DAML+OIL entailments. The most significant aspect of our approach is the use of a description logic reasoner to precompute the subsumption hierarchy. We describe a lightweight implementation that makes use of a common RDBMS (MS Access) and the FaCT description logic reasoner. Surprisingly, this simple approach provides good results for extensional queries over a large set of DAML+OIL data that commits to a representative ontology of moderate complexity. As such, we expect such systems to be adequate for personal or small-business usage.},
+}
+
+@Misc{LjiljanaStojanovic0,
+  author   = {Ljiljana Stojanovic, Nenad Stojanovic, Raphael Volz},
+  title    = {Migrating data-intensive Web Sites into the Semantic Web},
+  year     = {0},
+  abstract = {The Semantic Web is intended to enable machine processability of web content and seems to be a solution for many drawbacks of the current Web. It is based on metadata that describe the formal semantics of Web contents. We present a novel, integrated and automated approach for migrating dam-intensive Web applications into the Semantic Web. This approach can be applied to a broad range of today&#039;s business Web sites.},
+}
+
+@Misc{Taswell2008,
+  author   = {Taswell, Carl},
+  title    = {Correction Corrections to “DOORS to the Semantic Web and Grid With a PORTAL for Biomedical Computing”},
+  year     = {2008},
+  abstract = {In the above paper [1], there are several corrections. 1) In the third from last sentence of the Abstract, page 191, “IRIS” was deleted so that the beginning of the sentence no longer has a subject and instead begins with a verb. This sentence should be corrected to read as follows:},
+}
+
+@Misc{Taswell2008a,
+  author   = {Taswell, Carl},
+  title    = {DOORS to the semantic web and grid with a PORTAL for biomedical computing},
+  year     = {2008},
+  abstract = {Abstract—The semantic web remains in the early stages of devel-opment. It has not yet achieved the goals envisioned by its founders as a pervasive web of distributed knowledge and intelligence. Suc-cess will be attained when a dynamic synergism can be created between people and a sufficient number of infrastructure systems and tools for the semantic web in analogy with those for the orig-inal web. The domain name system (DNS), web browsers, and the benefits of publishing web pages motivated many people to reg-ister domain names and publish web sites on the original web. An analogous resource label system, semantic search applications, and the benefits of collaborative semantic networks will motivate people to register resource labels and publish resource descrip-tions on the semantic web. The Domain Ontology Oriented Re-source System (DOORS) and Problem Oriented Registry of Tags and Labels (PORTAL) are proposed as infrastructure systems for resource metadata within a paradigm that can serve as a bridge between the original web and the semantic web. Registers do-main names while DNS publishes domain addresses with mapping of names to addresses for the original web. Analogously, POR-TAL registers resource labels and tags while DOORS publishes resource locations and descriptions with mapping of labels to lo-cations for the semantic web. BioPORT is proposed as a prototype PORTAL registry specific for the problem domain of biomedical computing. Index Terms—Biomedical computing, BioPORT, cross-directory},
+}
+
+@Misc{Taswell2010,
+  author   = {Taswell, Carl},
+  title    = {Article A Distributed Infrastructure for Metadata about Metadata: The HDMM Architectural Style and PORTAL-DOORS System},
+  year     = {2010},
+  abstract = {future internet},
+}
+
+@Misc{GhislainFourny,
+  author   = {Ghislain Fourny, Jsoniq The, Sql Nosql Ghislain Fourny},
+  title    = {JSONiq The SQL of NoSQL},
+  abstract = {JSONiq is a query and processing language specifically designed for the popular JSON data model. The main ideas behind JSONiq are based on lessons learned in more than 30 years of relational query systems and more than 15 years of experience with designing and implementing query languages for semi-structured data. As a result, JSONiq is an expressive and highly optimizable language to query and update any kind of JSONiq store or resource. It enables developers to leverage the same productive high-level language across a variety of NoSQL products. This book gives a complete introduction to the JSONiq language. It does so by giving examples for all types of expressions and functions. Those examples can be immediately used because they work standalone, which allows the interested reader to start diving into the},
+}
+
+@Misc{StefanieScherzinger,
+  author   = {Stefanie Scherzinger, Meike Klettke},
+  title    = {Managing Schema Evolution in NoSQL Data Stores},
+  abstract = {NoSQL data stores are commonly schema-less, providing no means for globally defining or managing the schema. While this offers great flexibility in early stages of application development, devel-opers soon can experience the heavy burden of dealing with in-creasingly heterogeneous data. This paper targets schema evolution for NoSQL data stores, the complex task of adapting and chang-ing the implicit structure of the data stored. We discuss the re-commendations of the developer community on handling schema changes, and introduce a simple, declarative schema evolution lan-guage. With our language, software developers and architects can systematically manage the evolution of their production data and perform typical schema maintenance tasks. We further provide a holistic NoSQL database programming language to define the se-mantics of our schema evolution language. Our solution does not require any modifications to the NoSQL data store, treating the data store as a black box. Thus, we want to address application develop-ers that use NoSQL systems as database-as-a-service.},
+}
+
+@Misc{Eysenbach,
+  author   = {Eysenbach, Gunther},
+  title    = {The Semantic Web and . . .},
+  abstract = {The `Semantic Web&#039; can be thought of an extension of the present web, as an additional machine-processable layer of data beneath the visible layer of human-readable information. In the first part of this chapter I will briefly review the building blocks of the Semantic Web, such as metadata expressed in the format of the Resource Description Framework (RDF). In the second part, I will provide some examples and review the prospects of the Semantic Web for the field of knowledge management and knowledge translation in consumer health informatics; for example, supporting decisions to be made by consumers, for improving access to information, and for addressing questions around the quality of health information on the web. Perhaps the most significant application of the Semantic Web for the health field is trust management, i.e. helping consumers to identify high quality trustworthy health resources on the web.},
+}
+
+@Book{,
+  author    = {Sandro Pasquali},
+  title     = {Mastering Nodejs},
+  year      = {2013},
+  editor    = {Edward Gordan, Gregory Wild},
+  publisher = {Packet Publishing Ltd.},
+  file      = {:C\:\\Users\\jliu1\\Documents\\BHAVI\\JLiu\\Literature\\Books\\Mastering-Node-js-2013-Sandro-Pasquali-www.ebook-dl.com.pdf:PDF},
+}
+
+@Book{,
+  author    = {Kristina Chodorow and Michael Dirolf},
+  title     = {MongoDB: The Definitive Guide},
+  year      = {2010},
+  editor    = {Julie Steele},
+  publisher = {O' Reilly},
+}
+
+@Book{,
+  author    = {Simon Holmes},
+  title     = {Mongoose for Application Development},
+  year      = {2013},
+  editor    = {Grant Mizen},
+  publisher = {Packet Publishing Ltd.},
+}
+
+@Misc{RupaliArora,
+  author   = {Rupali Arora, Rinkle Rani Aggarwal},
+  title    = {Modeling and Querying Data in MongoDB},
+  abstract = {Abstract — With the uninterrupted growth of data volumes, the storage of information, support and maintenance have become the biggest challenge. Relational database products fall behind to scaling the applications according to the incoming traffic. Due to huge data storage and scaling demands, growing number of developers and users have begun turning to NoSQL databases. This paper describes data modeling and query execution in MongoDB Document database. This paper shows how data is retrieved from MongoDB Document database without using JOIN.},
+}
+
+@Misc{SanobarKhan,
+  author   = {Sanobar Khan, Prof. Vanita Mane},
+  title    = {SQL Support over MongoDB using Metadata},
+  abstract = {Abstract- New requirements are arising in environments where we have higher volumes of data with high operation rates, agile development and cloud computing. In recent years, a growing number of companies have adopted various types of nonrelational database, commonly referred to as NoSQL database. This reflects the growing interactivity of applications which are becoming more networked and social, driving more requests to the database where high-performance NoSQL database such as MongoDB becomes favorable. This paper attempts to use NoSQL database to replace the relational database. It mainly focuses on one of the boosting technology of NoSQL database i.e. MongoDB, and makes a comparison with MySQL and thus justifies why MongoDB is preferred over MySQL. Lastly, a method is proposed to integrate these two types of database by adding a middleware (Metadata) between application layer and database layer.},
+}
+
+@Misc{HarpinderKaur,
+  author   = {Harpinder Kaur, Janpreet Singh},
+  title    = {Improvement in Load Balancing Technique for MongoDB Clusters},
+  abstract = {Now is the era of cloud computing and related buzzwords are the virtualization, resource sharing, Big Data. With the advent of new technologies, gadgets or simply IOT has enabled the advanced connectivity of devices, systems, and services and with this the data is being produced at an enormous rates from these devices be it form sensors, GPS data, log files from different sources etc. which is mostly unstructured data. With the acquaintance with NoSQL technology MongoDB is extensively used to handle all types of data because of its various advantages as its auto-load balancing technique in which the primary node’s read load is decreased by distributing load to the secondary nodes, other feature of MongoDB is its auto sharding technique which works by reducing the load over a node by splitting up data in chunks and migrating it over to other nodes. The present work endeavors to study the role of MongoDB’s auto balancing technique. In present work MongoDB balancer is introduced to and the performance of balancer of MongoDB for MongoDB clusters in distributed environment is examined.},
+}
+
+@Misc{RajatAghi,
+  author   = {Rajat Aghi, Sumeet Mehta, Rahul Chauhan Siddhant Chaudhary Navdeep Bohra},
+  title    = {A comprehensive comparison of SQL and MongoDB},
+  abstract = {databases},
+}
+
+@Misc{ElifDede,
+  author   = {Elif Dede, Daniel Gunter, Richard Shane Canon Lavanya Ramakrishnan},
+  title    = {Performance evaluation of a mongodb and hadoop platform for scientific data analysis},
+  abstract = {Scientific facilities such as the Advanced Light Source (ALS) and Joint Genome Institute and projects such as the Ma-terials Project have an increasing need to capture, store, and analyze dynamic semi-structured data and metadata. A similar growth of semi-structured data within large In-ternet service providers has led to the creation of NoSQL data stores for scalable indexing and MapReduce for scal-able parallel analysis. MapReduce and NoSQL stores have been applied to scientific data. Hadoop, the most popular open source implementation of MapReduce, has been eval-uated, utilized and modified for addressing the needs of dif-ferent scientific analysis problems. ALS and the Materials Project are using MongoDB, a document oriented NoSQL store. However, there is a limited understanding of the per-formance trade-offs of using these two technologies together. In this paper we evaluate the performance, scalability and fault-tolerance of using MongoDB with Hadoop, towards the goal of identifying the right software environment for scien-tific data analysis.},
+}
+
+@Misc{JyotsnaTalrejaWassan,
+  author   = {Jyotsna Talreja Wassan, Asstt Professor},
+  title    = {Exploratory Implementation of Stream Clustering Algorithm using MongoDB},
+  abstract = {In the recent years, Big Data has become ubiquitous and various big data tools are greatly in use to accelerate the computing and analytics in various fields. Various algorithms in Computer Science use large and heterogeneous data sets; and hence could be explored with Big Data platforms. One such class of algorithms is stream clustering algorithms; dealing with large scale processing of incremental data. This motivation of using Big Data tools may lead to improved efficacy of running the algorithms. Hadoop, the most popular open source implementation of MapReduce, has been utilized and modified for catering the needs of numerous clustering problems. But various scientific and computing fields are also using MongoDB, a document oriented NoSQL store supporting Map Reduce. The main purpose of this paper is to try and judge the usage of MongoDB as a Big Data platform for implementing a stream clustering algorithm using MapReduce programming model to study the factors relating Map Reduce and MongoDB together.},
+}
+
+@Misc{Cattell,
+  author   = {Cattell, Rick},
+  title    = {Scalable SQL and NoSQL data stores},
+  abstract = {In this paper, we examine a number of SQL and so-called “NoSQL ” data stores designed to scale simple OLTP-style application loads over many servers. Originally motivated by Web 2.0 applications, these systems are designed to scale to thousands or millions of users doing updates as well as reads, in contrast to traditional DBMSs and data warehouses. We contrast the new systems on their data model, consistency mechanisms, storage mechanisms, durability guarantees, availability, query support, and other dimensions. These systems typically sacrifice some of these dimensions, e.g. database-wide transaction consistency, in order to achieve others, e.g. higher availability and scalability.},
+}
+
+@Misc{DanielPeng,
+  author   = {Daniel Peng, Frank Dabek, Google Inc},
+  title    = {Large-scale Incremental Processing Using Distributed Transactions and Notifications},
+  abstract = {Updating an index of the web as documents are crawled requires continuously transforming a large repository of existing documents as new documents arrive. This task is one example of a class of data processing tasks that transform a large repository of data via small, independent mutations. These tasks lie in a gap between the capabilities of existing infrastructure. Databases do not meet the storage or throughput requirements of these tasks: Google’s indexing system stores tens of petabytes of data and processes billions of updates per day on thousands of machines. MapReduce and other batch-processing systems cannot process small updates individually as they rely on creating large batches for efficiency. We have built Percolator, a system for incrementally processing updates to a large data set, and deployed it to create the Google web search index. By replacing a batch-based indexing system with an indexing system based on incremental processing using Percolator, we process the same number of documents per day, while reducing the average age of documents in Google search results by 50%. 1},
+}
+
+@Misc{PradeepSoni,
+  author   = {Pradeep Soni, Narendra Singh Yadav},
+  title    = {Quantitative Analysis of Document Stored Databases},
+  abstract = {So far relational databases are used for storing the data for the applications but now there is need to store huge amount of data to store and manage which cannot stored by relational databases. NoSQL technology over comes this problem. This research paper provides a brief introduction to NoSQL database working and comparative study between MongodB and Cassandra, Which are mostly used for big data application. The operations are performed on Ubuntu system to explore the results as distinguish between both NoSql databases. This paper shows the performance of Mongodb and Cassandra. Results proves that Cassandra is more powerful than Mongodb to load and process on big data and processing very fast as compare to Mongodb. This paper describes the functionality of Mongodb and Cassandra over the large dataset.},
+}
+
+@Misc{SumitaBarahm2013,
+  author   = {Sumita Barahm, Shahram Gh, Jason Yap},
+  title    = {A Comparison of Two Physical Data Designs for Interactive Social Networking Actions},
+  year     = {2013},
+  abstract = {This paper compares the performance of an SQL solution that implements a relational data model with a document store named MongoDB. We report on the performance of a single node configuration of each data store and assume the database is small enough to fit in main memory. We analyze utilization of the CPU cores and the network bandwidth to compare the two data stores. Our key findings are as follows. First, for those social networking actions that read and write a small amount of data, the join operator of the SQL solution is not slower than the JSON representation of MongoDB. Second, with a mix of actions, the SQL solution provides either the same performance as MongoDB or outperforms it by 20%. Third, a middle-tier cache enhances the performance of both data stores as query result look up is significantly faster than query processing with either system. A},
+}
+
+@Article{,
+  author  = {Kei-Hoi Cheung, Andrew K. Smith, Kevin Y.L. Yip, Christopher J.O Baker, and Mark B. Gerstein},
+  title   = {Semantic Web Approach to Database Integration in the Life Sciences},
+  year    = {2007},
+  journal = {Revolutionizing Knowledge Discovery in the Life Sciences},
+}
+
+@Comment{jabref-meta: databaseType:biblatex;}
