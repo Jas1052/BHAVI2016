@@ -1,0 +1,67 @@
+p. 1
+
+"For researchers, primary research is only the first stepping stone to proving or disproving a hypothesis. One successful experiment proves little to nothing in the grand scheme of the scientific community. However, the weakness of a single experiment is [overcome] by the power of the meta-analysis, usually completed by a third party. Meta-analysis requires researchers to analyze results from muliple primary articles and assess whether or not the result is accurate, show [whether] the hypothesis presented [is] proven or disproven, and provide a degree of error. However, despite the necessity of meta-analyses, it continues to be time consuming and ineffective at connecting with all points of data. The miniscule [number] of secondary articles pale[s] in comparison to the literal thousands of primary articles which are published each day. In order to take advantage of all the new information which is provided and to create more effective secondary analyses, a semantic web solution provides the necessary tools in order to take full [advantage of the statistical power] that meta-analysis offers."
+"One such implementation of a meta-analysis system is the NEXUS-PORTAL-DOORS (NPD) system." The NPDS by itself is not a meta-analysis system but a server infrastructure for managing the meta-data needed for meta-analysis.
+
+"In order to support PORTAL registries and DOORS directories, a database is necessary in order to support and store the data." What are these? Imagine you are writing for someone who does not know about the NPDS.
+
+"In order to take full advantage of a tried and true framework, MEAN stack serves as the ideal system by thoroughly integrating client-side, server-side, and database processes." The phrasing here is a little awkward.
+
+"As part of that stack, MongoDB alongside Mongoose enables a heirarchical database for storing resource metadata." In what way is it hierarchical?
+
+"For this new NEXUS-PORTAL-DOORS (NPD) system implementation, MEAN (MongoDB, Express, Angular, Node.js) stack is the most updated and contributed fullstack [J]ava[S]cript framework." The MEAN stack in general is not a single framework, just a collection of components that many developers have found work well together. Please cite one or more sources attesting to the popularity of the MEAN stack.
+
+"Both backend and front end will rely heavily on [N]ode.js, an open-source runtime environment which enables scalable web applications and servers." Node.js specifically provides the server-side runtime environment. The client side still runs in the browser. Please cite a source explaining how Node.js works.
+
+"Used with Express and other packages, [N]ode.js enables the user to organize a web application into a MVC (model-view-controller) architecture." Is it Model-View-Controller or Model-View-View-Model? What does Express do? What other packages?
+
+"In accordance with the ``M'' from MEAN stack, MongoDB serves as the database for the [MEAN stack implementation of the NPDS]."
+
+"As a noSQL[ ]database, MongoDB relies on collecetions and documents in contrast to tables and rows." What are collections and documents? How are they different from tables and rows.
+
+"However, MongoDB offers no implementation of queries or updates to the database." It does offer a simple API for querrying and updating using property-value pairs. Also, please add citations for your information about MongoDB.
+
+"Mongoose, a popular object relational mapper for MongoDB, enables connection to a MongoDB database from [J]ava[S]cript, allowing model abstraction, large scale queries, data validation, and more. It also enables the user to create schemas, which help generate a structured database." The schema is what provides model validation. Please cite a source on Mongoose.
+"In the NPDS system, Problem Oriented Registry of Tags And Labels (PORTAL) registers resource labels and tags, inserting or updating them into the database" The NPDS registrar registers resource descriptions, including the tags and labels. The PORTAL registry just provides read-only access to them.
+
+"Both PORTAl and DOORS can be optimized for faster read/write if organized in a h[ie]rarchical architecture organized through XML." PORTAL and DOORS are both read-only. Only the registrar provides both read and write access. Also, I am not sure what you mean by "a h[ie]rarchical architecture organized through XML." Please explain what the hierarchy is and how it improves responsiveness. Also, the messages need not be in XML format. That is just the format the current implementation uses.
+
+"Within the database, the collections for each of these PORTAL, DOORS, [and] NEXUS are named respectively with the prefixes pds P, pds D, and pds N." What is NEXUS?
+
+"The database schema for these collections contains a String identifier and a [J]ava[S]cript Object, where the JSON converted from XML is stored." Does it need to be converted from XML? Where is it getting XML?
+
+"The identifer is a tag which helps queries traverse and retreive the correct resource while the Object contains:• Resource Entity:• Resource Record:• Resource Infoset:• Resource Representation:
+• Resource Messages:"
+What are the types of these fields? What are the constraints on them?
+"However, MongoDB’s documentless database structure enables the same metadata resource information to be kept in XML format." How is MongoDB documentless? Does it store data in XML format?
+
+"However, XML format is not supported by any databases, including Mongoose/MongoDB." This contradicts what you just said.
+
+p. 2
+
+"of which JSON is the most reliable." How so?
+
+"In order to translate between XML [and] JSON, xml2js is used for XML to JSON conversion and easyxml for JSON to XML conversion." Why not just use xml2js for both? Why not just use easyxml for both? Who maintains these packages? Please cite the documentation.
+"Combined with queries, this enables a user to communicate and exchange information between NEXUS, PORTAL, and DOORS." Is it actually the end user who is performing the exchange between servers? How does that work?
+"One is to contain user[ accounts?] for an authentication system, working alongside PassportJS. PassportJS enables the creation of accounts under username and password. It can also be [configured?] to receive authentication from third parties such[ as] Facebook and Twitter, a common practice nowadays. However, for our purposes, the primary advantage of using [P]assport is the level of flexibility it offers. Its primary goal is to keep the complexity of user authentication simple and done in as a few lines of code as possible. This is done with ``strategies,'' which are modules which enable the user [Which user, the end user or the developer?] to specifically designate which form of authentication they desire, without uncessary modules. PassportJS also supports persistent sessions. Lastly, PassportJS enables the database to store the username as a string, but encodes the password with a series of numbers [What series of numbers? How does it encode them?], ensuring a level of security[ against what?] for the user." Please cite the Passport documentation.
+
+"The second purpose of MongoDB in the template is to read/write/store metadata. Although the collection names will be changed upon the generation of each server from the template, the role will not." What does this mean? Why are the collection names changed?
+
+"The pimary purpose of the database in the PORTAL registrar is to be able to store metadata resources with labels and optional tags. Meanwhile, in the DOORS directories, the database must be able to retrieve locations and descriptions of resources, which are specified by references to an OWL ontology." Are they? Please cite one of the PORTAL-DOORS papers.
+"August:• Week 4: Finish javascript fo[r] creating and inserting xml into MongoDB, presentation"
+
+"However, retrievel through queries is currently still an issue." How so?
+
+"Due to the flexbility of noSQL and especially MongoDB’s document based database, it offers a database storage which fit the purposes of storing metadata." in what way?
+
+"Furthermore, the automation of this process is enabled by Mongoose, which also helps create a schema and acts as an ORM." Since the database is not relational, how does the term ORM apply?
+
+"The current implementation"
+
+"conclusion text here" Please put some conclusion text here. Since this is your interpretation of the implications of your work and your ideas for how to build on it in the future, it can be almost anything you want.
+
+"This research was supported by the Brain Health Alliance Virtual Institute. We’d like to thank everyone who par- ticpated in the 2016 program with us, especially Sujay Ratna and Ben Bae, who worked with us toward a se- mantic web solution."
+
+References
+
+Please put all your citations in a citation manager, export them as a BibTeX file, and put a \bibliography{YourBibFileNameWithoutTheExtension} element in place of one of the two placeholder ones at the end of the tech report. The "cite" link in Google Scholar can generate a BibTeX citation for you that you can the copy and paste into JabRef (Dr. Taswell's preferred citation manager) or BibDesk (almost exactly the same but runs a little more smoothly on OS X).
