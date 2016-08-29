@@ -5,6 +5,6 @@ Inside the root of the folder with the javascript files and .json file in comman
 
 After that, run "node pubMed.js searchKey" where searchKey is whatever searchKey you would like the webcrawler to search for in PubMed.
 
-Run "node search.js" to query for an article (under construction). 
+Run "node search.js" to query for an article.
 
 
