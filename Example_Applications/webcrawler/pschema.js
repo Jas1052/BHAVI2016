@@ -1,4 +1,3 @@
-
 var mongoose = require("mongoose");
 mongoose.set('debug', true);
 
@@ -14,4 +13,4 @@ var resourceSchema = new mongoose.Schema({
 //   return db.model('pdsNResource', resourceSchema);
 
 //compile schema to model
-module.exports = db.model('nexusResources', resourceSchema);
+module.exports = db.model('portalResources', resourceSchema);
