@@ -1,13 +1,13 @@
 //var mongoose = require("mongoose");
 (function search() {
     console.log("Search.js Started");
-    var author = "Jason";
-    lookFor(author);
+    var resourceAuthor = "jliu";
+    lookFor(resourceAuthor);
 
     function lookFor(tag) {
         console.log("Looking");
         var Articles = require("./nschema.js"); //grabs schema and model
-        Articles.find({author: tag}, "-_id handle", function (err, docs) {
+        Articles.find({resourceAuthor: tag}, "-_id handle", function (err, docs) {
             //console.log(docs);
             var result = docs.toString();
             var count = (result.match(/handle:/g) || []).length; //finding # of occurrences

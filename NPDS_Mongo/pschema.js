@@ -7,7 +7,7 @@ var db = mongoose.createConnection('mongodb://localhost/npds');
 //create schema for articles
 var resourceSchema = new mongoose.Schema({
     handle: String,
-    author: String,
+    resourceAuthor: String,
     resource: Object
 });
 //   return db.model('pdsNResource', resourceSchema);
