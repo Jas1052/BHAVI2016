@@ -1,10 +1,12 @@
-To run webcrawler, download the javascript files, and .json file. 
-You must have Node.JS installed on your computer. 
+NPDS_Mongo contains database related code for "Using MongoDB and Mongoose with a MEAN Stack Implementation of the NEXUS-PORTAL-DOORS System"
 
-Inside the root of the folder with the javascript files and .json file in commandline, run "npm install." Then, start up an instance of MongoDB (https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/)
+In order to run any of the files, start up a MongoDB instance: https://docs.mongodb.com/manual/mongo/
+Then, open a Node.js console and traverse to the directory where NPDS_Mongo is stored.
 
-After that, run "node pubMed.js searchKey" where searchKey is whatever searchKey you would like the webcrawler to search for in PubMed.
+To run the file, simply type node <filename>
 
-Run "node search.js" to query for an article.
+insert.js: creates and inserts resources into a NPDS database with Nexus, Portal, and Doors collections. The varaibles at the top of the file (name, nature, type, and author) will evnetually be fed info from client side or webcrawler.
 
+search.js: looks for resources created by a certain author 
 
+retrieveResource.js: looks for resource based on handle/tag
