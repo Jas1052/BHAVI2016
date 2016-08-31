@@ -1,7 +1,7 @@
 //var mongoose = require("mongoose");
 (function search() {
     console.log("Search.js Started");
-    var resourceAuthor = "jliu";
+    var resourceAuthor = "jliu"; //look for resources under this author
     lookFor(resourceAuthor);
 
     function lookFor(tag) {

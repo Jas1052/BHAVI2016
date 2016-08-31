@@ -35,46 +35,8 @@ function saveInfo(name, nature, author, type, resourceAuthor) {
     //var xmlResource = createResource(name, nature, author, type, resourceAuthor);
 
     //*********Partial*******//
-    var xmlResource =
-        '<PDS>' +
-    '<ServerResponse>' +
-        '<Status>' + 'FillerStatus' + '</Status>' +
-        '<Answer>' +
-            '<NEXUS>' +
-                '<ResourceRepresentation>' +
-                    '<EntityMetadata>'+
-                        '<Name>' +
-                            name +
-                            '</Name>' +
-                        '<Nature>' +
-                            nature +
-                            '</Nature>' +
-                        '<CanonicalLabel>' + 'http://pds.brainwatch.net/solomon/' + principalTag + '</CanonicalLabel>' +
-                        '<AliasLabels>' +
-                            '<AliasLabel>' + 'http://pds.brainwatch.net/solomon/i515cf983ed' + '</AliasLabel>' +
-                            '</AliasLabels>' +
-                        '<PrincipalTag>' + principalTag + '</PrincipalTag>' +
-                        '</EntityMetadata>' +
-                    '<RecordMetadata>' +
-                        '<CreatedOn>' + creationDate + '</CreatedOn>' +
-                        '<UpdatedOn>' + creationDate + '</UpdatedOn>' +
-                        '<Registrar>' + 'http://pds.brainhealthalliance.net/bha-nexus' + '</Registrar>' +
-                        '<Registry>' + 'http://pds.brainwatch.net/solomon' + '</Registry>' +
-                        '<Directory>' + 'http://pds.brainhealthalliance.net/bha-doors' + '</Directory>'+
-                        '</RecordMetadata>' +
-                    '<InfosetMetadata>' +
-                        '<PortalValidation>' +
-                            '<Status>' + 'Pending' + '</Status>' +
-                            '</PortalValidation>' +
-                        '<DoorsValidation>' +
-                            '<Status>' + 'Pending' + '</Status>' +
-                            '</DoorsValidation>' +
-                        '</InfosetMetadata>' +
-                    '</ResourceRepresentation>' +
-                '</NEXUS>' +
-            '</Answer>' +
-        '</ServerResponse>' +
-    '</PDS>';
+    var xmlResource = createNexusResource(name, nature, author, type, resourceAuthor, principalTag, creationDate);
+
     console.log(xmlResource);
 
     var parseString = require('xml2js').parseString;
@@ -114,6 +76,49 @@ function saveInfo(name, nature, author, type, resourceAuthor) {
             }
         )
     });
+}
+function createNexusResource(name, nature, author, type, resourceAuthor, principalTag, creationDate){
+    var nexusResource = '<PDS>' +
+    '<ServerResponse>' +
+    '<Status>' + 'FillerStatus' + '</Status>' +
+    '<Answer>' +
+    '<NEXUS>' +
+    '<ResourceRepresentation>' +
+    '<EntityMetadata>'+
+    '<Name>' +
+    name +
+    '</Name>' +
+    '<Nature>' +
+    nature +
+    '</Nature>' +
+    '<CanonicalLabel>' + 'http://pds.brainwatch.net/solomon/' + principalTag + '</CanonicalLabel>' +
+    '<AliasLabels>' +
+    '<AliasLabel>' + 'http://pds.brainwatch.net/solomon/i515cf983ed' + '</AliasLabel>' +
+    '</AliasLabels>' +
+    '<PrincipalTag>' + principalTag + '</PrincipalTag>' +
+    '</EntityMetadata>' +
+    '<RecordMetadata>' +
+    '<CreatedOn>' + creationDate + '</CreatedOn>' +
+    '<UpdatedOn>' + creationDate + '</UpdatedOn>' +
+    '<Registrar>' + 'http://pds.brainhealthalliance.net/bha-nexus' + '</Registrar>' +
+    '<Registry>' + 'http://pds.brainwatch.net/solomon' + '</Registry>' +
+    '<Directory>' + 'http://pds.brainhealthalliance.net/bha-doors' + '</Directory>'+
+    '</RecordMetadata>' +
+    '<InfosetMetadata>' +
+    '<PortalValidation>' +
+    '<Status>' + 'Pending' + '</Status>' +
+    '</PortalValidation>' +
+    '<DoorsValidation>' +
+    '<Status>' + 'Pending' + '</Status>' +
+    '</DoorsValidation>' +
+    '</InfosetMetadata>' +
+    '</ResourceRepresentation>' +
+    '</NEXUS>' +
+    '</Answer>' +
+    '</ServerResponse>' +
+    '</PDS>';
+
+    return nexusResource;
 }
 function createResource(name, nature, author, type, resourceAuthor) {
     var resource =

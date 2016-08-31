@@ -2,7 +2,7 @@
 (function retrieveResources() {
     var jsonxml = require('jsontoxml');
     console.log("Search.js Started");
-    var handleName = "FSaNCoBVFD"; // specify handle
+    var handleName = "CBaPoDPiAsD"; // specify handle to look for
     lookFor(handleName);
 
     function lookFor(tag) {
