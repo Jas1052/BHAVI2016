@@ -45,29 +45,23 @@
 
 	For this new NEXUS-PORTAL-DOORS (NPD) system implementation, MEAN (MongoDB, Express, Angular, Node.js)  stack is the most updated and contributed fullstack javascript framework. Both backend and front end will rely heavily on node.js, an open-source runtime environment which enables scalable web applications and servers. Used with Express and other packages, node.js enables the user to organize a web application into a MVC (model-view-controller) architecture. In accordance with the "M" from MEAN stack, MongoDB serves as the database for the NPD. As a noSQL database, MongoDB relies on collecetions and documents in contrast to tables and rows. However, MongoDB offers no implementation of queries or updates to the database. Mongoose, a popular object relational mapper for MongoDB, enables connection to a MongoDB database from javascript, allowing model abstraction, large scale queries, data validation, and more. It also enables the user to create schemas, which help generate a structured database. \newline
 	
-	In the NPDS system, Problem Oriented Registry of Tags And Labels (PORTAL) registers resource labels and tags, inserting or updating them into the database while the Domain Ontology Oriented Resource System (DOORS) publishes resource locations and descriptions with mapping of labels to locations for the semantic web, retrieving stored data from the database. Both PORTAl and DOORS can be optimized for faster read/write if organized in a heirarchical architecture organized through XML. Within the database, the collections for each of these PORTAL, DOORS, AND NEXUS are named respectively with the prefixes pds P, pds D, and pds N. The database schema for these collections contains a String identifier and a javascript Object, where the JSON converted from XML is stored. The identifer is a tag which helps queries traverse and retreive the correct resource while the Object contains:\newline
+	In the NPDS system, Problem Oriented Registry of Tags And Labels (PORTAL) registers resource labels and tags, inserting or updating them into the database while the Domain Ontology Oriented Resource System (DOORS) publishes resource locations and descriptions with mapping of labels to locations for the semantic web, retrieving stored data from the database. Both PORTAl and DOORS can be optimized for faster read/write if organized in a heirarchical architecture organized through XML. Within the database, the collections for each of these PORTAL, DOORS, AND NEXUS are named portalResources, doorsResources, and nexuResources, respectfully. The database schema for these collections consists of a String handle, which acts as a quick identifer, a String resourceAuthor, which identifiers the user who created the record, and a series of Javascript Objects, which contains metadata information about the record. 
 
 \begin{itemize}
-  \item Resource Entity: 
-  \item Resource Record:
-  \item Resource Infoset: 
-  \item Resource Representation:
-  \item Resource Messages: 
+  \item Entity metadata: stores information about the object itself (tags, labels, descriptions)
+  \item Record metadata:stores information about entity for storage purposes (timestamps, which registry or directory)
+  \item Infoset metadata: stores information for management and analysis (status, validation times, info from reasoning machine)
+  \item Representation metadata: shortened version of resource, composed of entity, record, and infoset metadata
+  \item Message metadata: messages between servers or client
 \end{itemize}
-	In the previous implementation of NPDS, the Microsoft SQL database contained resources in lengthy tables with each column containing a small piece of information which would be used to build an XML document. However, MongoDB's documentless database structure enables the same metadata resource information to be kept in XML format. However, XML format is not supported by any databases, including Mongoose/MongoDB. Terefore, it is necessary to convert the XML into a data type which is recognized by Mongoose and able to be stored by MongoDB, of which JSON is the most reliable. In order to translate between XML is JSON, xml2js is used for XML to JSON conversion and easyxml for JSON to XML conversion.  \newline
+	In the previous implementation of NPDS, the Microsoft SQL database contained resources in lengthy tables with each column containing a small piece of information which would be used to build an XML document. However, MongoDB's documentless database structure enables the same metadata resource information to be kept in XML format. However, XML format is not supported by any databases, including Mongoose/MongoDB. Therefore, it is necessary to convert the XML into a data type which is recognized by Mongoose and able to be stored by MongoDB, of which JSON is the most reliable. In the new MEAN stack implmementation for NPDS, the xml record is generated from name, author, recordAuthor, nature, and type in order to create the metadata types mentioned above in XML format. The XML metdata is then converted into JSON and stored in MongoDB to be stored as a Javascript Object. Although each metadata type contains smaller information types, they are simply kept in the appopriate metadata type. This idea of splitting up the individual section down to a few sections was chosen because it enables a degree of modularity for future editing, but retains the accessbility that is offered by storing a resource as XML into MongoDB. In order to read or edit a record, the JSON is converted back into XML using the json2xml npm package. 
 
 	It is also vital that NEXUS, PORTAL, and DOORS sections of the NPDS system be able to communicate with one another. By using Mongoose, the schema of a collection can be modeled to point at another collection. Combined with queries, this enables a user to communicate and exchange information between NEXUS, PORTAL, and DOORS.  \newline
 
 	In order to create this implementation of MongoDB and Mongoose for a NPDS system, a template is required as the starting platform. Working with other parts of the NPDS implementation, MongoDB will serve two purposes. One is to contain users for an authentication system, working alongside PassportJS. PassportJS enables the creation of accounts under username and password. It can also be implemented to receive authentication from third parties sucha s Facebook and Twitter, a common practice nowadays. However, for our purposes, the primary advantage of using passport is the level of flexibility it offers. Its primary goal is to keep the complexity of user authentication simple and done in as a few lines of code as possible. This is done with "strategies," which are modules which enable the user to specifically designate which form of authentication they desire, without uncessary modules. PassportJS also supports persistent sessions. Lastly, PassportJS enables the database to store the username as a string, but encodes the password with a series of numbers, ensuring a level of security for the user. The second purpose of MongoDB in the template is to read/write/store metadata. Although the collection names will be changed upon the generation of each server from the template, the role will not. The pimary purpose of the database in the PORTAL registrar is to be able to store metadata resources with labels and optional tags. Meanwhile, the in the DOORS directories, the database must be able to retrieve locations and descriptions of resources, which are specified by references to an OWL ontology.
 
-August:
-\begin{itemize}
-	\item Week 4: Finish javascript fo creating and inserting xml into MongoDB, presentation
-\end{itemize}
-	
-
 \section*{Results}
-	The implementation of MongoDB for NPDS is a partial success. Currently, writing to the registrar is done smoothly in Mongoose. Storing XML data is also a success, being enabled by the npm module xml2js. However, retrievel through queries is currently still an issue. 
+	With the the ability to insert, query, and retrieve records into the NPDS databases, it proves the capability for Mongoose and Meanstack to act as a database for the NPDS system. 
 
 
 \section*{Discussion}
@@ -80,7 +74,7 @@ conclusion text here
 
 
 \section*{Acknowledgments}
-This research was supported by the Brain Health Alliance Virtual Institute. We'd like to thank everyone who particpated in the 2016 program with us, especially Sujay Ratna and Ben Bae, who worked with us toward a semantic web solution. 
+This research was supported by the Brain Health Alliance Virtual Institute. We'd like to thank everyone who particpated in the 2016 program with us, especially Sujay Ratna and Ben Bae, who cooperated closely with us towards a semantic web solution. 
 
 
 \section*{References}

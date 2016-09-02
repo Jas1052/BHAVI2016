@@ -8,7 +8,10 @@ var db = mongoose.createConnection('mongodb://localhost/npds');
 var resourceSchema = new mongoose.Schema({
     handle: String,
     resourceAuthor: String,
-    resource: Object
+    representationMetadata: Object
+    //entityMetadata: Object,
+    //recordMetadata: Object,
+    //infosetMetadata: Object
 });
 //   return db.model('pdsNResource', resourceSchema);
 

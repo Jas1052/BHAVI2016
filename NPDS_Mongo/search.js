@@ -6,20 +6,20 @@
 
     function lookFor(tag) {
         console.log("Looking");
-        var Articles = require("./nschema.js"); //grabs schema and model
+        var Articles = require("./schemas/nschema.js"); //grabs schema and model
         Articles.find({resourceAuthor: tag}, "-_id handle", function (err, docs) {
             //console.log(docs);
             var result = docs.toString();
             var count = (result.match(/handle:/g) || []).length; //finding # of occurrences
             var temp = result;
             result = "";
-            console.log("Checking DOORS");
+            console.log("Checking PORTAL");
             for(i = 0; i < count; i++){ //rotates to find occurrences
                 //console.log(temp);
                 //console.log(temp.indexOf("handle:"));
                 var tagValue = temp.match(/'([^']+)'/)[1];
 
-                var Articles = require("./dschema.js"); //grabs schema and model
+                var Articles = require("./schemas/pschema.js"); //grabs schema and model
                 Articles.find({handle: tagValue}, "-_id handle", function (err, docs) { //checks DOORS
                     //console.log(docs);
                     console.log(docs);

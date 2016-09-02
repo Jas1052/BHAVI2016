@@ -1,13 +1,14 @@
-//Article 1
-// var name = "First Symptoms and Neurocognitive Correlates of Behavioral Variant Frontotemporal Dementia";
-// var nature = "Dementia";
-// var type = "Article";
-// var author = "Santamaría-García H1,2,3,4, Reyes P1,4, García A2,3,5, Baéz S2,3, Martinez A1,6, Santacruz JM1,4, Slachevsky A7,8,9, Sigman M10, Matallana D1,4, Ibañez A2,3,11,12,13";
-//Article 2
-var name = "Complement Biomarkers as Predictors of Disease Progression in Alzheimer's Disease";
-var nature = "Alzheimer";
+//*******Article 1**********//
+var name = "First Symptoms and Neurocognitive Correlates of Behavioral Variant Frontotemporal Dementia";
+var nature = "Dementia";
 var type = "Article";
-var author = "Hakobyan S1, Harding K2, Aiyaz M3, Hye A3, Dobson R3, Baird A4, Liu B4, Harris CL1, Lovestone S4, Morgan BP1";
+var author = "Santamaría-García H1,2,3,4, Reyes P1,4, García A2,3,5, Baéz S2,3, Martinez A1,6, Santacruz JM1,4, Slachevsky A7,8,9, Sigman M10, Matallana D1,4, Ibañez A2,3,11,12,13";
+
+//*******Article 2**********//
+// var name = "Complement Biomarkers as Predictors of Disease Progression in Alzheimer's Disease";
+// var nature = "Alzheimer";
+// var type = "Article";
+// var author = "Hakobyan S1, Harding K2, Aiyaz M3, Hye A3, Dobson R3, Baird A4, Liu B4, Harris CL1, Lovestone S4, Morgan BP1";
 
 //Sets author of the resource (for future editing/access)
 var resourceAuthor = "jliu";
@@ -19,11 +20,11 @@ function saveInfo(name, nature, author, type, resourceAuthor) {
     var matches = name.match(/\b(\w)/g);
     var principalTag = matches.join('');
     var isDuplicate;
-    var Auth = require("./nschema.js"); //connects to model
+    var Auth = require("./schemas/nschema.js"); //connects to model
     //checks if tag exists
     Auth.findOne({handle: 'principalTag'}, function (err, obj) {
         if (!(obj == null)) {
-            principalTag = principalTag + 1;
+            principalTag = principalTag.toString() + "X";
         }
     });
     console.log(principalTag);
@@ -34,42 +35,42 @@ function saveInfo(name, nature, author, type, resourceAuthor) {
     //*********Full***********//
     //var xmlResource = createResource(name, nature, author, type, resourceAuthor);
 
-    //*********Partial*******//
-    var xmlResource = createNexusResource(name, nature, author, type, resourceAuthor, principalTag, creationDate);
+    //*********Resource Representation*******//
+    var xmlResource = createNResourceRepresenation(name, nature, author, type, resourceAuthor, principalTag, creationDate);
 
     console.log(xmlResource);
 
     var parseString = require('xml2js').parseString;
     parseString(xmlResource, function (err, jsonResource) {
         //console.log(result);
-        var nresource = require("./nschema.js"); //connects to model
+        var nresource = require("./schemas/nschema.js"); //connects to model
         nresource.create(
             {
                 handle: principalTag, //identifier
                 resourceAuthor: resourceAuthor,
-                resource: jsonResource //xml
+                representationMetadata: jsonResource //xml
             },
             function (err, value, path) {
                 console.log(err);
             }
         );
-        var presource = require("./pschema.js"); //connects to model
+        var presource = require("./schemas/pschema.js"); //connects to model
         presource.create(
             {
                 handle: principalTag, //identifier
                 resourceAuthor: resourceAuthor,
-                resource: jsonResource //xml
+                representationMetadata: jsonResource //xml
             },
             function (err, value, path) {
                 console.log(err);
             }
         );
-        var dresource = require("./dschema.js"); //connects to model
+        var dresource = require("./schemas/dschema.js"); //connects to model
         dresource.create(
             {
                 handle: principalTag, //identifier
                 resourceAuthor: resourceAuthor,
-                resource: jsonResource //xml
+                representationMetadata: jsonResource //xml
             },
             function (err, value, path) {
                 console.log(err);
@@ -77,48 +78,68 @@ function saveInfo(name, nature, author, type, resourceAuthor) {
         )
     });
 }
-function createNexusResource(name, nature, author, type, resourceAuthor, principalTag, creationDate){
-    var nexusResource = '<PDS>' +
+function createNResourceRepresenation(name, nature, author, type, resourceAuthor, principalTag, creationDate){
+    var nexusResource =
+        '<PDS>' +
     '<ServerResponse>' +
-    '<Status>' + 'FillerStatus' + '</Status>' +
-    '<Answer>' +
-    '<NEXUS>' +
-    '<ResourceRepresentation>' +
-    '<EntityMetadata>'+
+        '<Status>' + 'FillerStatus' + '</Status>' +
+        '<Answer>' +
+            '<NEXUS>' +
+                '<ResourceRepresentation>' +
+                    createNEntityMetadata(name, nature, author, type, resourceAuthor, principalTag, creationDate) +
+                    createNRecordMetdata(name, nature, author, type, resourceAuthor, principalTag, creationDate) +
+                    createNInfosetMetadata(name, nature, author, type, resourceAuthor, principalTag, creationDate) +
+                    '</ResourceRepresentation>' +
+                '</NEXUS>' +
+            '</Answer>' +
+        '</ServerResponse>' +
+    '</PDS>';
+
+    return nexusResource;
+}
+function createNEntityMetadata(name, nature, author, type, resourceAuthor, principalTag, creationDate){
+    var em = '<EntityMetadata>'+
     '<Name>' +
     name +
     '</Name>' +
     '<Nature>' +
     nature +
     '</Nature>' +
-    '<CanonicalLabel>' + 'http://pds.brainwatch.net/solomon/' + principalTag + '</CanonicalLabel>' +
+    '<CanonicalLabel>' + 'http://pds.brainwatch.net/nexus/' + principalTag + '</CanonicalLabel>' +
     '<AliasLabels>' +
-    '<AliasLabel>' + 'http://pds.brainwatch.net/solomon/i515cf983ed' + '</AliasLabel>' +
+    '<AliasLabel>' + 'http://pds.brainwatch.net/nexus/' + 'principalTag' + '</AliasLabel>' +
     '</AliasLabels>' +
     '<PrincipalTag>' + principalTag + '</PrincipalTag>' +
-    '</EntityMetadata>' +
-    '<RecordMetadata>' +
-    '<CreatedOn>' + creationDate + '</CreatedOn>' +
-    '<UpdatedOn>' + creationDate + '</UpdatedOn>' +
-    '<Registrar>' + 'http://pds.brainhealthalliance.net/bha-nexus' + '</Registrar>' +
-    '<Registry>' + 'http://pds.brainwatch.net/solomon' + '</Registry>' +
-    '<Directory>' + 'http://pds.brainhealthalliance.net/bha-doors' + '</Directory>'+
-    '</RecordMetadata>' +
-    '<InfosetMetadata>' +
-    '<PortalValidation>' +
-    '<Status>' + 'Pending' + '</Status>' +
-    '</PortalValidation>' +
-    '<DoorsValidation>' +
-    '<Status>' + 'Pending' + '</Status>' +
-    '</DoorsValidation>' +
-    '</InfosetMetadata>' +
-    '</ResourceRepresentation>' +
-    '</NEXUS>' +
-    '</Answer>' +
-    '</ServerResponse>' +
-    '</PDS>';
-
-    return nexusResource;
+    '</EntityMetadata>';
+    return em;
+}
+function createNRecordMetdata(name, nature, author, type, resourceAuthor, principalTag, creationDate){
+    var rm =
+     '<RecordMetadata>' +
+        '<CreatedOn>' + creationDate +
+            '</CreatedOn>' +
+        '<UpdatedOn>' + creationDate +
+            '</UpdatedOn>' +
+        '<Registrar>' + 'http://pds.brainhealthalliance.net/bha-nexus' +
+            '</Registrar>' +
+        '<Registry>' + 'http://pds.brainwatch.net/portal' +
+            '</Registry>' +
+        '<Directory>' + 'http://pds.brainhealthalliance.net/bha-doors' +
+            '</Directory>'+
+    '</RecordMetadata>';
+    return rm;
+}
+function createNInfosetMetadata(name, nature, author, type, resourceAuthor, principalTag, creationDate){
+    var im =
+     '<InfosetMetadata>' +
+        '<PortalValidation>' +
+            '<Status>' + 'Pending' + '</Status>' +
+            '</PortalValidation>' +
+        '<DoorsValidation>' +
+            '<Status>' + 'Pending' + '</Status>' +
+        '</DoorsValidation>' +
+    '</InfosetMetadata>';
+    return im;
 }
 function createResource(name, nature, author, type, resourceAuthor) {
     var resource =
