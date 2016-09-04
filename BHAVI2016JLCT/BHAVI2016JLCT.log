@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.6.11)  2 SEP 2016 17:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.6.11)  3 SEP 2016 18:47
 entering extended mode
 **./BHAVI2016JLCT.tex
 (BHAVI2016JLCT.tex
@@ -403,8 +403,8 @@ Underfull \hbox (badness 1147) in paragraph at lines 46--47
  []
 
 
-Underfull \hbox (badness 2384) in paragraph at lines 46--47
-\OT1/cmr/m/n/10 Mon-goose, a pop-u-lar ob-ject re-la-tional map-per for
+Underfull \hbox (badness 3128) in paragraph at lines 46--47
+\OT1/cmr/m/n/10 SQL re-la-tional databases, Mon-goDB en-ables more
  []
 
 
@@ -412,29 +412,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 46--47
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 51.
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 51.
+
+Underfull \vbox (badness 1320) has occurred while \output is active []
+
  [1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 
 ]
-Underfull \hbox (badness 2150) in paragraph at lines 59--60
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 53.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 53.
+
+Underfull \hbox (badness 2150) in paragraph at lines 61--62
 \OT1/cmr/m/n/10 to com-mu-ni-cate and ex-change in-for-ma-tion be-tween
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 59--60
+Underfull \hbox (badness 10000) in paragraph at lines 61--62
 
  []
 
-
-Underfull \vbox (badness 1184) has occurred while \output is active []
-
- [2]
+[2]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no œ in font cmr10!
@@ -489,11 +491,11 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 192.
 Here is how much of TeX's memory you used:
  6970 strings out of 493335
  99549 string characters out of 3139260
- 209503 words of memory out of 3000000
+ 208503 words of memory out of 3000000
  10392 multiletter control sequences out of 15000+200000
  8653 words of font info for 31 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 29i,8n,32p,1640b,399s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 29i,8n,32p,1641b,323s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX
@@ -501,7 +503,7 @@ es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX
 s/type1/public/amsfonts/cm/cmsl10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
 public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
 msfonts/cm/cmti10.pfb>
-Output written on BHAVI2016JLCT.pdf (3 pages, 114779 bytes).
+Output written on BHAVI2016JLCT.pdf (3 pages, 115362 bytes).
 PDF statistics:
  99 PDF objects out of 1000 (max. 8388607)
  33 named destinations out of 1000 (max. 500000)
